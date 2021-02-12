@@ -53,3 +53,13 @@ if($year === 2021){
 };
 echo "<br/>";
 
+// Cuarto ejercicio
+$nombre = "Maria";
+$edad = 16;
+$mayoria_edad = 18;
+
+if($edad >= $mayoria_edad){
+    echo "<h1>$nombre Es mayor de edad</h1>";
+}else{
+    echo "<h1>$nombre No es mayor de edad </h1>";
+}
