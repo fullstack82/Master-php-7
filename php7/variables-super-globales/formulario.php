@@ -7,7 +7,29 @@
 </head>
 
 <body>
-<h1>Formulario en PHP</h1>
+    <h1>Formulario en PHP</h1>
+    <form method="GET" action="recibir.php">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+        </p>
+
+        <p>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos">
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email">
+        </p>
+        <p>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass">
+        </p>
+
+        <input type="submit" value="Enviar datos">
+    </form>
 </body>
 
 </html>
