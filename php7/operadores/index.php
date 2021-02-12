@@ -47,6 +47,7 @@ echo "<h1>$año3</h1>";
 echo '<br/>';
 echo "<h1>$año4</h1>";
 
+echo '<hr />';
 
 
 
