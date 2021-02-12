@@ -2,6 +2,17 @@
 $dia = 4;
 
 
+
+
+
+echo "<br/>";
+// GOTO 
+goto marca;     // Aqui declaro GOTO (marca)
+echo "<h3>Instruccion 1 </h3>" ;
+echo "<h3>Instruccion 2 </h3>" ;
+echo "<h3>Instruccion 3 </h3>" ;
+echo "<h3>Instruccion 4 </h3>" ;
+
 switch ($dia) {
     case 1:
         echo "Lunes";
@@ -24,14 +35,5 @@ switch ($dia) {
 }
 
 
-echo "<br/>";
-// GOTO 
-goto marca;
-echo "<h3>Instruccion 1 </h3>" ;
-echo "<h3>Instruccion 2 </h3>" ;
-echo "<h3>Instruccion 3 </h3>" ;
-echo "<h3>Instruccion 4 </h3>" ;
-
-
 marca:
-echo "<h1>Me he saltado 4 echos</h1>";
+echo "<h1>Me he saltado 4 echos</h1>";  // AQUI LO EJECUTO SALTANDOSE EL RESTO DEL CODIGO 
