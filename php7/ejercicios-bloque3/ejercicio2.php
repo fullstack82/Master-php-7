@@ -1,5 +1,6 @@
 <?php
 /*
+----Verificacion de emails------------------------------------------------
 -  Ejercicio nº 2 :
 1.) Una función
 2.) Validar un email con filter_var
@@ -20,8 +21,8 @@ function validarEmail($email)
 
 
 
-if(isset($_GET['email'])){
+if (isset($_GET['email'])) {
     echo validarEmail($_GET['email']);
-}else{
+} else {
     echo "Pasa por get un email";
 }
