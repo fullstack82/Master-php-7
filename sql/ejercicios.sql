@@ -1,17 +1,23 @@
 use concesionario;
 /*1. Modificar la comision de los vendedores y ponerla al 2% cuando ganana mas de 50.000 */
+
 UPDATE vendedores SET comision = 0.5 WHERE sueldo >= 50000;
 /*2. Incrementar el precio de los coches en un 2%*/
+
 UPDATE coches SET precio = precio * 1.05;
 /*3. Sacar todos los vendedores cuya fecha de alta sea posterior al 1 de julio de 2018 */
+
 SELECT * FROM vendedores WHERE fecha >= '2018-07-01';
 /*4. Mostrar todos los vendedores con su nombre y el numero de dias que llevan en el concesionario*/
+
 SELECT nombre, DATEDIFF(CURDATE(), fecha) AS 'dias' FROM vendedores;
 /*5. Visualizar el nombre y los apellidos de los vendedores en una sola columna,
 su fecha de registro y el dia de la semana en la que se registraron*/
+
 SELECT CONCAT(nombre, ', apellidos') AS 'nombres y apellidos', fecha, DAYNAME(fecha) FROM vendedores;
 
 /*6. Mostrar el nombre y el salario de los vendedores con cargo de 'Ayudante de tienda'*/
+
 SELECT nombre, sueldo FROM vendedores WHERE cargo='Ayudante en tienda';
 
 /*7. Visualizar todos los coches en cuya marca exista la letra "A" y cuyo modelo empiece por "F"*/
