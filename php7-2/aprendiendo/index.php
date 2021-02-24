@@ -20,11 +20,20 @@ $query = mysqli_query($conexion, "SELECT * FROM notas");
 // Reccorriendo las filas de las tablas
 while($nota = mysqli_fetch_assoc($query) ){
     //var_dump($nota);
-    echo $nota['titulo'].'<br/>';
+    echo "<h2>".$nota['titulo']."<h2/>";
     echo "<br />";
-    echo $nota['descripcion'].'<br/>';
+    echo"<br>".$nota['descripcion']."<br/>";
     echo "<br />";
     echo $nota['color'].'<br/>';
 }
 
+// Insertar en la base de datos en PHP
+$sql = "INSERT INTO notas VALUES (null, 'Nota desde php', 'Esto es una nota desde php', 'green')";
+$insert = mysqli_query($conexion, $sql);
 
+echo "<hr />";
+if($insert){
+    echo "La insercion se ha echo correctamente";
+}else{
+    echo "Error: ".mysqli_error($conexion);
+}
