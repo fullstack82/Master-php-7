@@ -1,6 +1,4 @@
 <?php require_once './includes/cabecera.php' ?>
-
-<div id="contenedor">
 <?php require_once './includes/lateral.php' ?>
     <div class="principal">
         <h1>Ultimas entradas</h1>
@@ -102,5 +100,5 @@
             <a href="">Ver todas las entradas</a>
         </div>
     </div>
-</div>
+    
 <?php require_once './includes/pie.php' ?>
