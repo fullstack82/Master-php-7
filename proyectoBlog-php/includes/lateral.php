@@ -22,7 +22,7 @@
                 <input type="email" name="email" />
                 <label for="password">Password</label>
                 <input type="password" name="password" />
-                <input type="submit" value="Registrar" />
+                <input type="submit" name="submit" value="Registrar" />
             </form>
         </div>
     </aside>
