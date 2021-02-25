@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Recoger los valores del formulario de registro
 if (isset($_POST)) {
     // Recoger los valores del formulario de registro
@@ -47,6 +48,20 @@ if (isset($_POST)) {
     $guardar_usuario = false;
     if (count($errores) == 0) {
         $guardar_usuario = true;
+        // Cifrar la contraseña
+        $password_segura = password_hash($password, 'PASSWORD_BCRYPT', ['cost'=>4]);
+        var_dump(($password));
+        var_dump($password_segura);
+        die();
+
+
+
+
+
         // Insertar usuario en la tabla usuarios de la BBDD
+
+    }else{
+        $_SESSION['errores'] = $errores;
+        header('Location: index.php');
     }
 }
