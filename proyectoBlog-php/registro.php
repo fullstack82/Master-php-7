@@ -40,6 +40,13 @@ if (isset($_POST)) {
         $password_validado = false;
         $errores['email'] = "El password esta vacio";
     }
-
     var_dump($errores);
+
+
+
+    $guardar_usuario = false;
+    if (count($errores) == 0) {
+        $guardar_usuario = true;
+        // Insertar usuario en la tabla usuarios de la BBDD
+    }
 }
