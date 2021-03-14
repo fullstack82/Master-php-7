@@ -34,7 +34,7 @@ class Coche
 
     public function frenar()
     {
-        $this->velicidad--;
+        $this->velocidad--;
     }
     // Devolvemos el valor que tiene el método
     public function getVelocidad()
@@ -44,7 +44,7 @@ class Coche
 }    // Fin definicion de la clase
 
 // Crear un objeto o instanciar la clase
-    $coche = new Coche();
+    $coche = new Coche($color, $marca, $modelo, $caballos, $velocidad, $plazas);
 
     var_dump($coche);
 echo "<br/>";
@@ -58,4 +58,21 @@ $coche->setColor("amarillo");
 echo "El color del coche es: ".$coche->getColor();
 echo "<br/>";
 
+$coche->acelerar();
+$coche->acelerar();
+$coche->acelerar();
+$coche->acelerar();
 
+
+$coche->frenar();
+
+echo "velocidad del coche: ".$coche->getVelocidad();
+
+echo "<br/>";
+
+// Creando segundo objeto 
+$coche2 = new Coche($color, $marca, $modelo, $caballos, $velocidad, $plazas);
+
+var_dump($coche2);
+echo "<br/>";
+var_dump($coche);
