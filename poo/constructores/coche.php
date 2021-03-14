@@ -56,6 +56,25 @@ class Coche
     {
         return $this->velocidad;
     }
+
+
+    public function mostrarInfo(Coche $miObjeto){       // Poniendo coche delante le estamos exigiendo que sea un objeto de tipo coche, (la clase)en este caso la de coche
+        if(is_object($miObjeto)){
+        $informacion = "<h1>Informacion del coche</h1>";
+        $informacion .= "<br/> Modelo: ".$miObjeto->modelo;
+        $informacion .= "<br/> Color: ".$miObjeto->color;
+        $informacion .= "<br/> Marca: ".$miObjeto->marca;
+        $informacion .= "<br/> Caballos: ".$miObjeto->caballos;
+        $informacion .= "<br/> Velocidad: ".$miObjeto->velocidad;
+        $informacion .= "<br/> Plazas: ".$miObjeto->plazas; 
+        }else{
+            $informacion = "Tu dato es este: 
+                $miObjeto";
+        }
+
+
+        return $informacion;
+    }
 }  
 
 

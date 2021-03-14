@@ -18,4 +18,6 @@ var_dump($coche3);*/
 $coche->color = "lila";
 $coche->setMarca("audi");
 
-var_dump($coche->getModelo());
+echo $coche->mostrarInfo($coche1);
+
+//var_dump($coche->getModelo());
