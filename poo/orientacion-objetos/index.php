@@ -7,9 +7,12 @@
 
 class Coche
 {
-    public $color = "lila";
-    public $marca = "alpha";
-    public $modelo = "sport";
+    // Public = podemos acceder a el desde cualquier lugar, dentro de la clase actual, dentro de clases que hereden esta clase o incluso fuera de la clase;
+        public $color = "lila"; 
+    // protected = podemos acceder desde la clase que los define y desde clases que hereden esta clase;
+        protected $marca = "alpha"; 
+    // Private = unicamente se puede acceder desde esta clase;
+        private $modelo = "sport";
     public $caballos = 400;
     public $velocidad = 250;
     public $plazas = 5;

@@ -4,8 +4,8 @@ class Coche
 
     // Mala practica no se deben poner los valores directamente (se ponen en constructor)
     public $color;
-    public $marca;
-    public $modelo;
+    private $marca;
+    protected $modelo;
     public $caballos;
     public $velocidad;
     public $plazas;
@@ -32,6 +32,14 @@ class Coche
     public function setColor($color)
     {
         $this->color = $color;
+    }
+    public function setMarca($marca)
+    {
+        $this->marca = $marca;
+    }
+
+    public function getModelo(){
+        return $this->modelo;
     }
 
     public function acelerar()
