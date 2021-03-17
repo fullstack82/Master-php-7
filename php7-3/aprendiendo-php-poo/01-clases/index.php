@@ -28,4 +28,6 @@ class Coche {
     public function frenar(){
         $this->velocidad--;
     }
+
+    
 }
