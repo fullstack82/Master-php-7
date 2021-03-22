@@ -17,5 +17,3 @@ INSERT INTO entradas VALUES(null, 'PRO', 'Juego de fultbol', '2021/05/16', 2, 2)
 INSERT INTO entradas VALUES(null, 'Zombies', 'plantas y zombies', CURDATE(), 2, 1);
 
 INSERT INTO entradas VALUES(null, 'La sirenita', 'juego para niños', CURDATE(), 2, 3);  /*Curdate nos muestra la hora actual*/
-
-probando
